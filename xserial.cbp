@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="xserial" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/xserial" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DXPLM200=1" />
+			<Add option="-DXPLM210=1" />
+			<Add option="-DXPLM300=1" />
+			<Add option="-DXPLM301=1" />
+			<Add option="-DXPLM302=1" />
+			<Add option="-DAPL=0" />
+			<Add option="-DIBM=0" />
+			<Add option="-DLIN=1" />
+			<Add option="-D__GNUC__=1" />
+		</Compiler>
+		<Unit filename="AsyncSerial.cpp" />
+		<Unit filename="AsyncSerial.h" />
+		<Unit filename="Makefile" />
+		<Unit filename="XplaneAsyncSerial.cpp" />
+		<Unit filename="XplaneAsyncSerial.h" />
+		<Unit filename="Xutil.cpp" />
+		<Unit filename="Xutil.h" />
+		<Unit filename="XpinConfig.h" />
+		<Unit filename="plugin.cpp" />
+		<Unit filename="XpinConfig.cpp" />
+		<Extensions>
+			<code_completion>
+				<search_path add="/home/user/xp11dev/SDK/CHeaders/XPLM" />
+			</code_completion>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
